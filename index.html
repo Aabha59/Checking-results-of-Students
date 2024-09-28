@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .Father {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .Son {
+            width: 300px;
+            padding: 30px;
+            background-color: rgba(219, 83, 128, 0.745);
+            border-radius: 10px;
+            border-style:dashed ;
+            
+        }
+        
+        input,
+        button {
+            margin-top: 5px;
+            width: 100%;
+            font-size: 20px;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            background-color:cornsilk;
+        }
+        
+        h2 {
+            text-align: center;
+            padding-bottom:10px;
+            color:cornsilk;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="Father">
+        <div class="Son">
+
+            <h2><u>Student Portal</u></h2>
+
+            <form action="result.php" method="post">
+                <input type="text" placeholder="Enter Class" name="cls">
+                <input type="text" placeholder="Enter Semester" name="sem">
+                <input type="text" placeholder="Enter RollNo." name="rollno">
+                <button type="submit" name="chk">Check Result</button>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
